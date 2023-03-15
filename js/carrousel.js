@@ -20,7 +20,7 @@ const images = [
     'img/05.webp'
 ];
 const slider = document.querySelector('.slider');
-const thumb = document.querySelector('.thumbnails-container');
+const thumbnails = document.querySelector('.thumbnails-container');
 
 let currentIndex = 0;
 let slides = '';
@@ -37,7 +37,7 @@ for (let i = 0; i < images.length; i++) {
 
 }
 slider.innerHTML += slides;
-thumb.innerHTML += thumbs;
+thumbnails.innerHTML += thumbs;
 document.querySelectorAll('.slide')[0].classList.add('active');
 document.querySelectorAll('.thumb')[0].classList.add('active');
 
